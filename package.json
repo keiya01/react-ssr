@@ -98,7 +98,6 @@
     "redux-saga-test-plan": "^4.0.0-rc.3",
     "require-context.macro": "^1.2.2",
     "rimraf": "^3.0.0",
-    "robotstxt-webpack-plugin": "^7.0.0",
     "supertest": "^4.0.2",
     "typescript": "^3.7.4",
     "webpack": "^4.41.5",
