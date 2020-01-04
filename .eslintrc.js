@@ -26,6 +26,7 @@ module.exports = {
         "@typescript-eslint/no-use-before-define": 0,
         "@typescript-eslint/explicit-function-return-type": 0,
         "@typescript-eslint/no-explicit-any": 0,
+        "@typescript-eslint/no-var-requires": 0,
         "react/display-name": 0,
         "react/prop-types": 0,
         "no-console": "error"
