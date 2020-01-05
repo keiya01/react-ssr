@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon ./src/server/index.ts",
-    "build": "npm run rm:dist && run-p build:client build:server",
+    "build": "rimraf ./dist && run-p build:client build:server",
     "build:server": "cross-env NODE_ENV=production BABEL_ENV=node babel ./src -d ./dist/server --extensions '.ts,.tsx'",
     "build:client": "cross-env NODE_ENV=production webpack --config webpack.client.config.js",
     "test": "jest"
