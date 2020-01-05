@@ -10,7 +10,7 @@ module.exports = api => {
         {
           useBuiltIns: web ? "usage" : undefined,
           corejs: web ? "core-js@3" : undefined,
-          targets: !web ? { node: "curent" } : undefined
+          targets: !web ? { node: "current" } : undefined
         }
       ],
       "@babel/preset-typescript",
