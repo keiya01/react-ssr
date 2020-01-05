@@ -26,7 +26,7 @@ export const lv3Directives: helmet.IHelmetContentSecurityPolicyDirectives = {
   scriptSrc: [
     (_, res) => `'nonce-${res.locals.nonce}'`,
     "'strict-dynamic'",
-    "'usafe-eval'"
+    "'unsafe-eval'"
   ]
 };
 
