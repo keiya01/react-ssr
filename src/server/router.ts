@@ -1,7 +1,7 @@
-import { Express, Request, Response } from "express";
+import express, { Express } from "express";
+import * as renderer from "./controller/renderer";
 
 export const setRouter = (app: Express) => {
-  app.get("/", (_: Request, res: Response) =>
-    res.status(200).send("Hello World")
-  );
+  app.use("/public", express.static("dist/client"));
+  app.get("*", renderer.handleRender);
 };
