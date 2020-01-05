@@ -17,7 +17,7 @@ const useHMR = (app: express.Express) => {
       webpackDevMiddleware(compiler, {
         publicPath: config.output.publicPath,
         writeToDisk(filePath: string) {
-          return /loadable/.test(filePath);
+          return /loadable-stats/.test(filePath);
         }
       })
     );
