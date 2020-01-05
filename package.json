@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon ./src/server/index.ts",
+    "start": "cross-env NODE_ENV=development ts-node ./src/server/index.ts",
     "build": "rimraf ./dist && run-p build:client build:server",
     "build:server": "cross-env NODE_ENV=production BABEL_ENV=node babel ./src -d ./dist/server --extensions '.ts,.tsx'",
     "build:client": "cross-env NODE_ENV=production webpack --config webpack.client.config.js",
