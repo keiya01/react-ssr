@@ -1,5 +1,17 @@
 import { combineReducers } from "redux";
+import counter, {
+  CountState,
+  initialState as counterInitialState
+} from "./counter";
 
-export const initialState = {};
+export interface State {
+  counter: CountState;
+}
 
-export const rootReducer = combineReducers({});
+export const initialState: State = {
+  counter: counterInitialState
+};
+
+export const rootReducer = combineReducers({
+  counter
+});
